@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plataforma oficial da ONG Esperança Viva. Conectando voluntários e doadores para transformar vidas no terceiro setor através da educação e assistência social.">
+    <title>Início | ONG Esperança Viva</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Folha de Estilos Global do Design System -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho Institucional e Navegação Principal -->
+    <header>
+        <p><strong>🌱 ONG Esperança Viva</strong></p>
+        <nav aria-label="Navegação Principal" class="main-nav">
+            <!-- Controle do Menu Hambúrguer Mobile (100% CSS Nativo) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Alternar Menu de Navegação">
+            <label for="menu-toggle" class="menu-icon" aria-hidden="true">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </label>
+
+            <!-- Lista de Navegação Principal -->
+            <ul class="nav-list">
+                <li><a href="index.html" aria-current="page">Início</a></li>
+                <li class="dropdown">
+                    <a href="projetos.html" class="dropdown-trigger">Projetos Sociais <span class="dropdown-arrow" aria-hidden="true">▾</span></a>
+                    <ul class="dropdown-menu" aria-label="Submenu de Projetos Sociais">
+                        <li><a href="projetos.html#educacao">Educação para o Futuro</a></li>
+                        <li><a href="projetos.html#seguranca">Segurança Alimentar</a></li>
+                        <li><a href="projetos.html#capacitacao">Capacitação Profissional</a></li>
+                    </ul>
+                </li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal da Página Inicial -->
+    <main>
+
+        <!-- Caixa de Alerta Semântica de Campanha Ativa -->
+        <div class="alert alert-success" role="status">
+            <span class="alert-icon" aria-hidden="true">📢</span>
+            <div class="alert-content">
+                <p class="alert-title">Campanha do Agasalho 2026 em Andamento!</p>
+                <p class="alert-message">Já arrecadamos mais de 800 cobertores e agasalhos. Sua participação é fundamental para aquecer famílias no próximo inverno.</p>
+            </div>
+        </div>
+
+        <!-- Banner Central Institucional -->
+        <section aria-label="Banner de Destaque">
+            <figure>
+                <img src="assets/banner.jpg" alt="Banner oficial da ONG Esperança Viva com mensagem de solidariedade e transformação comunitária" width="1396" height="277">
+            </figure>
+        </section>
+
+        <!-- Seção de Apresentação com H1 Único -->
+        <section id="apresentacao">
+            <h1>Transformando Vidas e Construindo o Amanhã</h1>
+            <p>Bem-vindo à plataforma da <strong>ONG Esperança Viva</strong>. Atuamos incansavelmente no terceiro setor para garantir apoio a comunidades em situação de vulnerabilidade, promovendo educação de qualidade, suporte alimentar e cidadania para quem mais precisa.</p>
+            
+            <figure>
+                <img src="assets/voluntario.jpg" alt="Equipe de voluntários da ONG Esperança Viva reunida durante ação comunitária de acolhimento social" width="800" height="358">
+                <figcaption>Voluntários da ONG Esperança Viva atuando diretamente junto à comunidade atendida.</figcaption>
+            </figure>
+
+            <p>
+                <a href="cadastro.html">Seja um Voluntário</a> | 
+                <a href="#modal-doacao" data-modal-open>Fazer Doação Rápida</a> |
+                <a href="projetos.html">Conheça Nossos Projetos</a>
+            </p>
+        </section>
+
+        <!-- Seção de Pilares Institucionais -->
+        <section id="missao-visao-valores">
+            <h2>Nossos Pilares</h2>
+            <p>Conheça os princípios éticos e estratégicos que fundamentam cada uma de nossas ações e parcerias:</p>
+            
+            <article>
+                <span class="badge badge-success">Pilar Central</span>
+                <h3>Missão</h3>
+                <p>Promover o desenvolvimento social e humano sustentável por meio de ações educacionais, segurança alimentar e capacitação profissional para famílias em situação de vulnerabilidade.</p>
+            </article>
+
+            <article>
+                <span class="badge badge-info">Longo Prazo</span>
+                <h3>Visão</h3>
+                <p>Ser uma referência no terceiro setor na articulação de redes de solidariedade e cidadania, erradicando a extrema pobreza nas comunidades em que atuamos.</p>
+            </article>
+
+            <article>
+                <span class="badge badge-warning">Princípios</span>
+                <h3>Valores</h3>
+                <ul>
+                    <li>Transparência em todas as ações e prestação de contas rigorosa.</li>
+                    <li>Empatia inegociável e respeito integral à dignidade humana.</li>
+                    <li>Compromisso com o impacto social duradouro e emancipatório.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Seção de Impacto Social com Tabela Semântica -->
+        <section id="impacto">
+            <h2>Nosso Impacto em Números</h2>
+            <p>Graças ao apoio constante de nossos doadores, parceiros e equipe de voluntários, nossos resultados refletem o poder transformador da união:</p>
+            
+            <table>
+                <caption>Indicadores de Atuação Anual da Organização</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Categoria de Atendimento</th>
+                        <th scope="col">Métrica Alcançada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Famílias Atendidas Diretamente</td>
+                        <td><span class="impact-value" data-counter="1500" data-prefix="+ " data-suffix=" famílias">+ 1.500 famílias</span></td>
+                    </tr>
+                    <tr>
+                        <td>Cestas Básicas e Alimentos Distribuídos</td>
+                        <td><span class="impact-value" data-counter="10000" data-suffix="+ unidades">10.000+ unidades</span></td>
+                    </tr>
+                    <tr>
+                        <td>Voluntários Ativos nas Operações</td>
+                        <td><span class="impact-value" data-counter="350" data-suffix=" colaboradores">350 colaboradores</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- Notificação Flutuante Toast de Atualização -->
+    <div class="toast-container" aria-live="polite" aria-atomic="true" aria-hidden="true">
+        <div class="toast" role="status">
+            <span class="toast-icon" aria-hidden="true">🔔</span>
+            <div class="toast-body">
+                <p class="toast-title">Novas Vagas de Voluntariado</p>
+                <p class="toast-message">Inscrições abertas para a oficina de letramento digital.</p>
+            </div>
+            <button type="button" class="toast-close" aria-label="Fechar notificação">&times;</button>
+        </div>
+    </div>
+
+    <!-- Janela Modal de Doação Rápida -->
+    <div id="modal-doacao" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-titulo" aria-hidden="true" hidden>
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3 id="modal-titulo">Apoie a ONG Esperança Viva</h3>
+                <button type="button" class="modal-close-btn" data-modal-close aria-label="Fechar janela modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Sua doação garante alimentação, material escolar e cursos profissionalizantes para famílias em vulnerabilidade social.</p>
+                <div class="alert alert-info">
+                    <span class="alert-icon" aria-hidden="true">💡</span>
+                    <div class="alert-content">
+                        <p class="alert-title">Chave PIX Oficial (CNPJ):</p>
+                        <p class="alert-message"><strong id="pix-chave">12.345.678/0001-90</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-modal-cancel" data-modal-close>Voltar</button>
+                <button type="button" class="btn-copy-pix" data-copy-pix data-pix-value="12.345.678/0001-90">Copiar chave PIX</button>
+                <a href="cadastro.html" class="btn-modal-confirm">Quero ser Doador Mensal</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé Institucional -->
+    <footer>
+        <h3>Fale Conosco</h3>
+        <address>
+            <p><strong>E-mail:</strong> <a href="mailto:contato@ongesperancaviva.org.br">contato@ongesperancaviva.org.br</a></p>
+            <p><strong>Telefone:</strong> <a href="tel:+5511987654321">(11) 98765-4321</a></p>
+            <p><strong>Endereço:</strong> Rua da Solidariedade, 123 - Centro, São Paulo - SP, CEP: 01000-000</p>
+        </address>
+        <p>&copy; <span data-current-year>2026</span> ONG Esperança Viva. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça os projetos sociais, iniciativas de educação, segurança alimentar, capacitação profissional e oportunidades de voluntariado da ONG Esperança Viva.">
+    <title>Projetos Sociais | ONG Esperança Viva</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Folha de Estilos Global do Design System -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho Institucional e Navegação Principal -->
+    <header>
+        <p><strong>🌱 ONG Esperança Viva</strong></p>
+        <nav aria-label="Navegação Principal" class="main-nav">
+            <!-- Controle do Menu Hambúrguer Mobile (100% CSS Nativo) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Alternar Menu de Navegação">
+            <label for="menu-toggle" class="menu-icon" aria-hidden="true">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </label>
+
+            <!-- Lista de Navegação Principal -->
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li class="dropdown">
+                    <a href="projetos.html" class="dropdown-trigger" aria-current="page">Projetos Sociais <span class="dropdown-arrow" aria-hidden="true">▾</span></a>
+                    <ul class="dropdown-menu" aria-label="Submenu de Projetos Sociais">
+                        <li><a href="projetos.html#educacao">Educação para o Futuro</a></li>
+                        <li><a href="projetos.html#seguranca">Segurança Alimentar</a></li>
+                        <li><a href="projetos.html#capacitacao">Capacitação Profissional</a></li>
+                    </ul>
+                </li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal da Página de Projetos -->
+    <main>
+        
+        <!-- Caixa de Alerta de Mobilização Comunitária -->
+        <div class="alert alert-warning" role="status">
+            <span class="alert-icon" aria-hidden="true">⚠️</span>
+            <div class="alert-content">
+                <p class="alert-title">Meta de Arrecadação de Alimentos em 85%</p>
+                <p class="alert-message">Faltam apenas 150 cestas básicas para completarmos o atendimento do mês das famílias cadastradas na Zona Leste.</p>
+            </div>
+        </div>
+
+        <!-- Cabeçalho da Página com Título Principal H1 -->
+        <section id="cabecalho-projetos">
+            <h1>Nossas Frentes de Atuação e Solidariedade</h1>
+            <p>Descubra como transformamos a realidade de centenas de famílias por meio de nossas frentes contínuas de desenvolvimento comunitário. Veja de que forma você pode fazer parte dessa corrente do bem, seja dedicando seu tempo como voluntário ou contribuindo com doações.</p>
+        </section>
+
+        <!-- Seção de Projetos em Andamento com Estruturas Semânticas Article -->
+        <section id="frentes-acao">
+            <h2>Iniciativas em Andamento</h2>
+            <p>Conheça os programas sociais ativos que estão gerando impacto real e duradouro no dia a dia das comunidades assistidas:</p>
+            
+            <!-- Iniciativa 1 -->
+            <article id="educacao">
+                <span class="badge badge-success">Ativo</span>
+                <h3>Educação para o Futuro</h3>
+                <figure>
+                    <img src="assets/educacao.jpg" alt="Crianças e jovens em sala de aula participando de atividades de reforço escolar e letramento digital" width="400">
+                    <figcaption>Oficinas de reforço pedagógico e inclusão digital para jovens da periferia.</figcaption>
+                </figure>
+                <p>Oferecemos reforço escolar pedagógico, oficinas de informática básica e letramento digital para crianças e jovens da periferia, fortalecendo o rendimento escolar e combatendo a evasão precoce.</p>
+                <p><a href="cadastro.html">Quero Apoiar este Projeto</a></p>
+            </article>
+
+            <!-- Iniciativa 2 -->
+            <article id="seguranca">
+                <span class="badge badge-warning">Urgente</span>
+                <h3>Segurança Alimentar e Nutricional</h3>
+                <figure>
+                    <img src="assets/seguranca.jpg" alt="Cestas de alimentos e hortifrúti fresco prontas para distribuição às famílias cadastradas" width="400">
+                    <figcaption>Arrecadação e distribuição mensal de cestas de alimentos e hortifrúti.</figcaption>
+                </figure>
+                <p>Realizamos a arrecadação contínua e distribuição mensal de cestas de alimentos balanceados e hortifrúti fresco para famílias em extrema vulnerabilidade socioeconômica, assegurando refeições dignas.</p>
+                <p><a href="cadastro.html">Quero Apoiar este Projeto</a></p>
+            </article>
+
+            <!-- Iniciativa 3 -->
+            <article id="capacitacao">
+                <span class="badge badge-info">Novo Ciclo</span>
+                <h3>Capacitação Profissional Solidária</h3>
+                <figure>
+                    <img src="assets/capacitacao.jpg" alt="Alunos participando de oficina prática de formação e capacitação técnica profissionalizante" width="400">
+                    <figcaption>Cursos profissionalizantes gratuitos nas áreas de gastronomia, corte e costura.</figcaption>
+                </figure>
+                <p>Promovemos cursos e oficinas profissionalizantes gratuitos nas áreas de gastronomia, corte e costura e atendimento ao público, fomentando o empreendedorismo e a autonomia financeira dos alunos.</p>
+                <p><a href="cadastro.html">Quero Apoiar este Projeto</a></p>
+            </article>
+
+        </section>
+
+        <!-- Seção de Engajamento: Voluntariado e Doações -->
+        <section id="engajamento">
+            <h2>Como Você Pode Apoiar</h2>
+            <p>A força da ONG Esperança Viva reside na solidariedade ativa da nossa rede de apoiadores. Escolha como prefere participar:</p>
+            
+            <!-- Artigo de Voluntariado -->
+            <article>
+                <span class="badge badge-success">Vagas Abertas</span>
+                <h3>Programa de Voluntariado</h3>
+                <p>O engajamento de voluntários é o coração pulsar da nossa organização. Você pode doar seus talentos nas aulas de reforço, na montagem e logística de mantimentos ou no suporte aos eventos comunitários.</p>
+                <p><a href="cadastro.html">Cadastre-se como Voluntário</a></p>
+            </article>
+
+            <!-- Artigo de Doações -->
+            <article>
+                <span class="badge badge-warning">Doação Financeira / Material</span>
+                <h3>Campanhas de Doação</h3>
+                <p>Aceitamos doações contínuas de alimentos não perecíveis, agasalhos, livros e materiais escolares, além de aportes financeiros via chave PIX oficial. Cada centavo é aplicado com prestação de contas transparente.</p>
+                <p><a href="cadastro.html">Quero Fazer uma Doação</a></p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé Institucional -->
+    <footer>
+        <h3>Fale Conosco</h3>
+        <address>
+            <p><strong>E-mail:</strong> <a href="mailto:contato@ongesperancaviva.org.br">contato@ongesperancaviva.org.br</a></p>
+            <p><strong>Telefone:</strong> <a href="tel:+5511987654321">(11) 98765-4321</a></p>
+            <p><strong>Endereço:</strong> Rua da Solidariedade, 123 - Centro, São Paulo - SP, CEP: 01000-000</p>
+        </address>
+        <p>&copy; <span data-current-year>2026</span> ONG Esperança Viva. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
