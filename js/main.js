@@ -12,6 +12,42 @@ document.addEventListener('DOMContentLoaded', () => {
     element.textContent = new Date().getFullYear();
   });
 
+  /* Gerenciamento do Modo Claro / Escuro */
+  const themeToggleBtn = document.querySelector('#theme-toggle');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const savedTheme = safeStorage.get('esperancaVivaTema');
+
+  const applyTheme = (theme) => {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark-mode');
+      document.documentElement.classList.remove('light-mode');
+      if (themeToggleBtn) {
+        themeToggleBtn.innerHTML = '<span aria-hidden="true">☀️</span> Modo Claro';
+        themeToggleBtn.setAttribute('aria-label', 'Alternar para Modo Claro');
+      }
+    } else {
+      document.documentElement.classList.add('light-mode');
+      document.documentElement.classList.remove('dark-mode');
+      if (themeToggleBtn) {
+        themeToggleBtn.innerHTML = '<span aria-hidden="true">🌙</span> Modo Escuro';
+        themeToggleBtn.setAttribute('aria-label', 'Alternar para Modo Escuro');
+      }
+    }
+  };
+
+  if (savedTheme) {
+    applyTheme(savedTheme);
+  } else if (prefersDark) {
+    applyTheme('dark');
+  }
+
+  themeToggleBtn?.addEventListener('click', () => {
+    const isDark = document.documentElement.classList.contains('dark-mode');
+    const newTheme = isDark ? 'light' : 'dark';
+    applyTheme(newTheme);
+    safeStorage.set('esperancaVivaTema', newTheme);
+  });
+
   const impactSection = document.querySelector('#impacto');
   const counters = document.querySelectorAll('[data-counter]');
 

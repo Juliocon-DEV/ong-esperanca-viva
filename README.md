@@ -22,6 +22,27 @@ Portal institucional da **ONG Esperança Viva**, desenvolvido para promover proj
 
 ---
 
+## 💻 Como Executar Localmente
+
+### Pré-requisitos
+- Git instalado na máquina.
+- Um navegador web moderno (Chrome, Firefox, Edge) ou a extensão **Live Server** no VS Code.
+
+### Passo a Passo
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/ong-esperanca-viva.git
+   ```
+2. Acesse a pasta do projeto:
+   ```bash
+   cd ong-esperanca-viva
+   ```
+3. Execute a aplicação:
+   - Abra o arquivo `index.html` diretamente no navegador; ou
+   - Clique com o botão direito em `index.html` no VS Code e selecione **"Open with Live Server"**.
+
+---
+
 ## 🏷️ Versionamento e Releases
 
 Este projeto segue as diretrizes do [Semantic Versioning (SemVer 2.0.0)](https://semver.org/):

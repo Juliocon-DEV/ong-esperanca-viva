@@ -80,6 +80,82 @@
   --max-width-container: 1140px;
 }
 
+/* --- MODO ESCURO NATIVO (WCAG 2.1 - prefers-color-scheme: dark & classe manual .dark-mode) --- */
+@media (prefers-color-scheme: dark) {
+  :root:not(.light-mode) {
+    --color-primary: #4ADE80;          /* Verde Claro vibrante para alto contraste em fundo escuro */
+    --color-primary-dark: #86EFAC;
+    --color-primary-light: #14532D;
+    --color-primary-hover: #22C55E;
+
+    --color-secondary: #FBBF24;        /* Âmbar Claro para botões e CTAs */
+    --color-secondary-dark: #F59E0B;
+    --color-secondary-light: #78350F;
+
+    --color-neutral-bg: #0F172A;       /* Fundo principal escuro profundo */
+    --color-neutral-surface: #1E293B;  /* Superfície de cards e modais em ardósia escuro */
+    --color-neutral-border: #334155;   /* Bordas com contraste suave */
+    --color-neutral-text: #E2E8F0;     /* Texto corrido em cinza claro (Contraste > 9:1) */
+    --color-neutral-heading: #F8FAFC;  /* Títulos em branco gelo (Contraste > 15:1) */
+  }
+}
+
+html.dark-mode {
+  --color-primary: #4ADE80;
+  --color-primary-dark: #86EFAC;
+  --color-primary-light: #14532D;
+  --color-primary-hover: #22C55E;
+
+  --color-secondary: #FBBF24;
+  --color-secondary-dark: #F59E0B;
+  --color-secondary-light: #78350F;
+
+  --color-neutral-bg: #0F172A;
+  --color-neutral-surface: #1E293B;
+  --color-neutral-border: #334155;
+  --color-neutral-text: #E2E8F0;
+  --color-neutral-heading: #F8FAFC;
+}
+
+/* Botão de Alternância de Tema Claro/Escuro */
+.theme-toggle-btn {
+  background: transparent;
+  border: 1px solid var(--color-neutral-border);
+  color: var(--color-neutral-text);
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  transition: var(--transition-fast);
+}
+
+.theme-toggle-btn:hover {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  border-color: var(--color-primary);
+}
+
+/* --- VERSÃO DE ALTO CONTRASTE (WCAG AAA - prefers-contrast: more) --- */
+@media (prefers-contrast: more) {
+  :root {
+    --color-primary: #000000;
+    --color-neutral-bg: #FFFFFF;
+    --color-neutral-surface: #FFFFFF;
+    --color-neutral-border: #000000;
+    --color-neutral-text: #000000;
+    --color-neutral-heading: #000000;
+  }
+  
+  a, button, input, select, textarea {
+    outline: 3px solid #000000 !important;
+    outline-offset: 2px !important;
+  }
+}
+
 /* --------------------------------------------------------------------------
    2. RESET CSS E REGRAS GLOBAIS
    -------------------------------------------------------------------------- */
