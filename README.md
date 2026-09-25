@@ -31,7 +31,7 @@ Portal institucional da **ONG Esperança Viva**, desenvolvido para promover proj
 ### Passo a Passo
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/ong-esperanca-viva.git
+   git clone https://github.com/Juliocon-DEV/ong-esperanca-viva.git
    ```
 2. Acesse a pasta do projeto:
    ```bash
@@ -46,4 +46,5 @@ Portal institucional da **ONG Esperança Viva**, desenvolvido para promover proj
 ## 🏷️ Versionamento e Releases
 
 Este projeto segue as diretrizes do [Semantic Versioning (SemVer 2.0.0)](https://semver.org/):
+- **v1.1.0**: Otimização de performance com imagens WebP, `<picture>`, carregamento lazy e alternância dinâmica de tema claro/escuro acessível.
 - **v1.0.0**: Primeira versão estável de entrega com páginas institucionais, catálogo de projetos e formulários funcionais.
